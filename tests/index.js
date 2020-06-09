@@ -20,4 +20,11 @@ describe('RocketSMS', () => {
       res.should.have.property('balance');
     });
   });
+
+  describe('#senders()', () => {
+    it('should return senders', async () => {
+      const res = await sms.senders();
+      res.should.not.empty();
+    });
+  });
 });

@@ -47,6 +47,19 @@ class RocketSMS {
     });
     return response.data;
   }
+
+  /**
+   * Get available alpha numbers.
+   */
+  async senders() {
+    const response = await axios.get('https://api.rocketsms.by/simple/senders', {
+      params: {
+        username: this.username,
+        password: this.hash
+      }
+    });
+    return response.data;
+  }
 }
 
 module.exports = RocketSMS;
