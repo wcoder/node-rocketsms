@@ -1,6 +1,11 @@
 const axios = require('axios');
 const md5 = require('md5');
 
+/**
+ * RocketSMS API
+ * API documentation: https://rocketsms.by/storage/rocketsms_api.pdf
+ * v1.3.0
+ */
 class RocketSMS {
   constructor(username, password) {
     this.username = username;
