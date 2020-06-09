@@ -12,4 +12,12 @@ describe('RocketSMS', () => {
       res.should.have.property('cost');
     });
   });
+
+  describe('#balance()', () => {
+    it('should return balance', async () => {
+      const res = await sms.balance();
+      res.should.have.property('credits');
+      res.should.have.property('balance');
+    });
+  });
 });

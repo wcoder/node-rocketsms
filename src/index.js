@@ -29,6 +29,19 @@ class RocketSMS {
     });
     return response.data;
   }
+
+  /**
+   * Get current balance.
+   */
+  async balance() {
+    const response = await axios.get('https://api.rocketsms.by/simple/balance', {
+      params: {
+        username: this.username,
+        password: this.hash
+      }
+    });
+    return response.data;
+  }
 }
 
 module.exports = RocketSMS;
