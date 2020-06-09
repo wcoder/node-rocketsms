@@ -1,8 +1,6 @@
 const axios = require('axios');
 const md5 = require('md5');
 
-// require('axios-debug')(axios);
-
 class RocketSMS {
   constructor(username, password) {
     this.username = username;
@@ -18,7 +16,7 @@ class RocketSMS {
    * @param {bool} [priority] - fast sending (codes, passwords).
    */
   async send(phone, text, sender, timestamp, priority) {
-    return await axios.post('https://api.rocketsms.by/simple/send', null, {
+    const response = await axios.post('https://api.rocketsms.by/simple/send', null, {
       params: {
         username: this.username,
         password: this.hash,
@@ -29,6 +27,7 @@ class RocketSMS {
         priority: priority
       }
     });
+    return response.data;
   }
 }
 
