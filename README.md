@@ -19,9 +19,9 @@ npm install node-rocketsms
 ## Example Usage
 
 ```js
-var RocketSMS = require('node-rocketsms');
+const RocketSMS = require('node-rocketsms');
 
-var sms = new RocketSMS('username', 'password'});
+const sms = new RocketSMS('username', 'password'});
 ```
 
 ### Create message
