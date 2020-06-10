@@ -90,6 +90,19 @@ class RocketSMS {
     });
     return response.data;
   }
+
+  /**
+   * Get available templates.
+   */
+  async templates() {
+    const response = await axios.get('https://api.rocketsms.by/simple/templates', {
+      params: {
+        username: this.username,
+        password: this.hash
+      }
+    });
+    return response.data;
+  }
 }
 
 module.exports = RocketSMS;
