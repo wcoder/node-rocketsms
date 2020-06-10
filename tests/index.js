@@ -44,6 +44,8 @@ describe('RocketSMS', () => {
     it('should add new sender', async () => {
       const res = await sms.addSender('testsender');
       res.should.have.property('status', 'OK');
+    });
+  });
 
   describe('#templates()', () => {
     it('should return templates', async () => {
