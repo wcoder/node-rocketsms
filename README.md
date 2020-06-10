@@ -1,4 +1,4 @@
-# node-rocketsms
+# node-rocketsms [![npm](https://img.shields.io/npm/v/node-rocketsms.svg)](https://www.npmjs.com/package/node-rocketsms)
 
 Modern RocketSMS SMS-gateway API.
 
