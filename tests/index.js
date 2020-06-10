@@ -35,4 +35,16 @@ describe('RocketSMS', () => {
       res.should.not.empty();
     });
   });
+
+  describe('#addSender()', () => {
+    it('should return format error', async () => {
+      const res = await sms.addSender('test sender');
+      res.should.have.property('error', 'SENDER_BAD_FORMAT');
+    });
+    it('should add new sender', async () => {
+      const res = await sms.addSender('testsender');
+      res.should.have.property('status', 'OK');
+    });
+  });
+
 });

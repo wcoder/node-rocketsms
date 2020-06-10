@@ -75,6 +75,21 @@ class RocketSMS {
     });
     return response.data;
   }
+
+  /**
+   * Add alpha number.
+   * @param {string} sender - Alpha number for approval.
+   */
+  async addSender(sender) {
+    const response = await axios.post('https://api.rocketsms.by/simple/senders/add', null, {
+      params: {
+        username: this.username,
+        password: this.hash,
+        sender: sender,
+      }
+    });
+    return response.data;
+  }
 }
 
 module.exports = RocketSMS;
