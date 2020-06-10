@@ -36,6 +36,21 @@ class RocketSMS {
   }
 
   /**
+   * Check message status.
+   * @param {int} id - message ID.
+   */
+  async status(id) {
+    const response = await axios.get('https://api.rocketsms.by/simple/status', {
+      params: {
+        username: this.username,
+        password: this.hash,
+        id: id
+      }
+    });
+    return response.data;
+  }
+
+  /**
    * Get current balance.
    */
   async balance() {

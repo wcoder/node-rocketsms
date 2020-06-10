@@ -13,6 +13,14 @@ describe('RocketSMS', () => {
     });
   });
 
+  describe('#status()', () => {
+    it('should return message status', async () => {
+      const res = await sms.status(106974593);
+      res.should.have.property('id');
+      res.should.have.property('status');
+    });
+  });
+
   describe('#balance()', () => {
     it('should return balance', async () => {
       const res = await sms.balance();
