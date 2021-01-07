@@ -25,10 +25,10 @@
   "homepage": "https://github.com/wcoder/node-rocketsms#readme",
   "dependencies": {
     "axios": "^0.21.1",
-    "md5": "^2.2.1"
+    "md5": "^2.3.0"
   },
   "devDependencies": {
-    "mocha": "^7.2.0",
+    "mocha": "^8.2.1",
     "should": "^13.2.3"
   }
 }
