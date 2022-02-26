@@ -62,4 +62,4 @@ const result = await sms.templates();
 
 ---
 
-&copy; 2020
+&copy; 2022
