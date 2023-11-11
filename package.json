@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/wcoder/node-rocketsms#readme",
   "dependencies": {
-    "axios": "^0.26.0",
+    "axios": "^1.6.0",
     "md5": "^2.3.0"
   },
   "devDependencies": {
