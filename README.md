@@ -1,4 +1,4 @@
-# node-rocketsms [![npm](https://img.shields.io/npm/v/node-rocketsms.svg)](https://www.npmjs.com/package/node-rocketsms)
+# node-rocketsms
 
 Modern RocketSMS SMS-gateway API.
 
@@ -10,7 +10,7 @@ Modern RocketSMS SMS-gateway API.
 
 ## Installation
 
-This module is installed via npm:
+Install the [![latest version](https://img.shields.io/npm/v/node-rocketsms.svg?label=latest%20version)](https://www.npmjs.com/package/node-rocketsms) via npm:
 
 ```sh
 npm install node-rocketsms
@@ -62,4 +62,4 @@ const result = await sms.templates();
 
 ---
 
-&copy; 2022
+&copy;
